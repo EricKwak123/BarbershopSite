@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Man Cave Barbershop - Book</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+  
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000000; 
+}
+
+.top-banner {
+  background-color: #000000; 
+  padding: 10px 0;
+  color: #ffffff; 
+}
+
+.container {
+  background-color: #000000; 
+  color: #ffffff; 
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: #ffffff; 
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff; 
+  font-weight: bold;
+}
+
+
+.address a {
+  color: #ffffff; 
+  font-weight: bold;
+  font-size: 14px; 
+}
+
+.contact-us {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px; 
+}
+
+.logo:hover,
+.name:hover,
+nav ul li a:hover {
+  color: #F5B553; 
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); 
+  transition: opacity 0.15s ease;
+}
+
+.content .btn:hover {
+  box-shadow: 0 0 20px 10px rgba(245, 181, 83, 0.8); 
+  opacity: 0.70; 
+  transition: opacity 0.15s ease; 
+}
+
+.address a:hover{
+  color:rgb(30, 180, 255);
+  transition: opacity 0.15s ease;
+  text-shadow: 2px 2px 4px rgb(121, 215, 238); 
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 10px 30px;
+  color: #000000; 
+  height: 45px; 
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: 45px; 
+}
+
+.contact-info,
+.address,
+.trademarks {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contact-info {
+  margin-right: 30px; 
+}
+
+.address {
+  margin-right: 20px; 
+}
+
+.trademarks {
+  margin-right: 30px;
+}
+
+.trademarks a {
+  color: #000000; 
+}
+
+.trademarks a:hover {
+  color: #F5B553; 
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .address,
+  .contact-info,
+  .trademarks {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.form {
+  margin: 50px auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #F7F7F7;
+  border-radius: 5px;
+  border: 1px solid #000000; 
+}
+
+.booking-form {
+      margin: 50px auto;
+      max-width: 500px;
+      padding: 20px;
+      background-color: #F7F7F7;
+      border-radius: 5px;
+      border: 1px solid #000000;
+    }
+
+    .booking-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+
+    .booking-form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #000;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 3px;
+    }
+
+.time-slots {
+      margin-top: 20px;
+    }
+
+    .time-slots h3 {
+      margin-bottom: 10px;
+    }
+
+    .time-slots ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .time-slots li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+.top-banner {
+  background-color: #000000; 
+  padding: 10px 0;
+  color: #ffffff; 
+}
+
+.container {
+  background-color: #000000; 
+  color: #ffffff; 
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border: 1px solid #000000; 
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-banner">
+       <div class="container">
+         <div class="logo-container">
+           <a class="logo" href="index.html">
+             <img src="img/cave.png" alt="Logo">
+           </a>
+           <div class="name">
+             <a href="index.html" class="logo">The Man Cave Barbershop</a>
+           </div>
+         </div>
+         <div class="address">
+           <a href="https://maps.google.com" target="_blank">123 Main Street, City, State</a>
+         </div>
+         <div class="contact-us"><strong>Contact Us: +1 123-456-7890</strong></div>
+         <nav>
+           <ul>
+             <li><a href="about.html">About Us</a></li>
+             <li><a href="book.html">Book</a></li>
+             <li><a href="service.html">Services</a></li>
+             <li><a href="contact.html">Contact Us</a></li>
+           </ul>
+         </nav>
+       </div>
+     </div>
+ </header>
+
+ <section class="booking-form">
+  <h2>Book an Appointment</h2>
+  <form id="booking-form" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required onchange="generateTimeSlots()">
+
+    <label for="time">Time:</label>
+    <select id="time" name="time" required>
+      <option value="">Select a time</option>
+    </select>
+
+    <label for="service">Service:</label>
+    <select id="service" name="service">
+      <option value="haircut">Haircut: $35</option>
+      <option value="haircut(kid)">Haircut(12 and younger): $25</option>
+      <option value="student">Student cut: $30</option>
+      <option value="elder">Elder cut: $25</option>
+      <option value="shave">Shave: $20</option>
+      <option value="buzz">Buzzcut: $15 </option>
+      <option value="beard">Beard Trim: $20</option>
+      <option value="mustache">Mustache Trim: $15</option>
+    </select>
+
+    <label for="stylist">Stylist:</label>
+    <select id="stylist" name="stylist">
+      <option value="john">John</option>
+      <option value="mike">Mike</option>
+      <option value="chris">Chris</option>
+    </select>
+
+    <label for="comments">Comments(Optional):</label>
+    <textarea id="comments" name="comments"></textarea>
+
+    <button type="submit">Book Now</button>
+  </form>
+  <p>Email will be sent to confirm your appointment.</p>
+</section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <span class="contact-info">Contact Us: +1 123-456-7890</span>
+      </div>
+      <div class="footer-section">
+        <span class="address">Location: 123 Main Street, City, State</span>
+      </div>
+      <div class="footer-section">
+        <span class="trademarks">&copy; 2023 The Man Cave Barbershop. All rights reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  function validateForm() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var time = document.getElementById('time').value;
+  var service = document.getElementById('service').value;
+  var date = document.getElementById('date').value; // Added this line to retrieve the date value
+
+  // validation
+  if (name.trim() === '' || email.trim() === '' || time.trim() === '' || service.trim() === '') {
+    alert('Please fill in all required fields.');
+    return false; // Prevents form submission
+  } else {
+    // Form inputs are valid and redirects to confirmation apge
+    var bookingForm = document.getElementById('booking-form');
+    bookingForm.action = 'confirm.html?date=' + encodeURIComponent(date);
+    return true; 
+  }
+}
+
+  
+  function generateTimeSlots() {
+    var dateInput = document.getElementById('date');
+    var timeSelect = document.getElementById('time');
+
+    timeSelect.innerHTML = '<option value="">Select a time</option>';
+
+    var selectedDate = new Date(dateInput.value);
+
+ 
+    if (isNaN(selectedDate.getTime())) {
+      return; 
+    }
+
+    // Generate time slots for the day
+    var startTime = 10; // Starts at 10AM
+    var endTime = 16.5; // Ends at 4:30 PM
+
+    while (startTime <= endTime) {
+      var option = document.createElement('option');
+      var hour = Math.floor(startTime);
+      var minute = (startTime - hour) * 60;
+      var timeString = hour.toString().padStart(2, '0') + ':' + minute.toString().padStart(2, '0'); //format
+      option.value = timeString;
+      option.textContent = timeString;
+
+      timeSelect.appendChild(option);
+
+      // Increments the start time for the next slot
+      startTime += 0.5;
+    }
+  }
+</script>
+</body>
+</html>

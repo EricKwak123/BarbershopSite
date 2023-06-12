@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Man Cave Barbershop - Booking Confirmation</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000; 
+  }
+  
+  .top-banner {
+    background-color: #000000; 
+    padding: 10px 0;
+    color: #ffffff; 
+  }
+  
+  .container {
+    background-color: #000000; 
+    color: #ffffff; 
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: #ffffff; 
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold;
+  }
+  
+  
+  .address a {
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 14px; 
+  }
+  
+  .contact-us {
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 14px; 
+  }
+  
+  .logo:hover,
+  .name:hover,
+  nav ul li a:hover {
+    color: #F5B553; 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); 
+    transition: opacity 0.15s ease;
+  }
+  
+  .content .btn:hover {
+    box-shadow: 0 0 20px 10px rgba(245, 181, 83, 0.8); 
+    opacity: 0.70; 
+    transition: opacity 0.15s ease; 
+  }
+  
+  .address a:hover{
+    color:rgb(30, 180, 255);
+    transition: opacity 0.15s ease;
+    text-shadow: 2px 2px 4px rgb(121, 215, 238); 
+  }
+  
+  footer {
+    background-color: #ffffff;
+    padding: 10px 30px;
+    color: #000000; 
+    height: 45px; 
+    position: fixed; 
+    bottom: 0;
+    width: 100%; 
+  }
+  
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 45px; 
+  }
+  
+  .contact-info,
+  .address,
+  .trademarks {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .contact-info {
+    margin-right: 30px; 
+  }
+  
+  .address {
+    margin-right: 20px; 
+  }
+  
+  .trademarks {
+    margin-right: 30px; 
+  }
+  
+  .trademarks a {
+    color: #000000; 
+  }
+  
+  .trademarks a:hover {
+    color: #F5B553; 
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo-container {
+      margin-bottom: 10px;
+    }
+  
+    nav ul li {
+      margin-bottom: 10px;
+    }
+  
+    .footer-container {
+      flex-wrap: wrap;
+    }
+  
+    .address,
+    .contact-info,
+    .trademarks {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .confirmation {
+  text-align: center;
+  padding: 50px;
+  border: 2px solid #000000; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+    .confirmation h2 {
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .booking-details {
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    .booking-details p {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .footer-image {
+      display: block;
+      margin: 30px auto;
+      max-width: 500px;
+      height: auto;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <div class="top-banner">
+       <div class="container">
+         <div class="logo-container">
+           <a class="logo" href="index.html">
+             <img src="img/cave.png" alt="Logo">
+           </a>
+           <div class="name">
+             <a href="index.html" class="logo">The Man Cave Barbershop</a>
+           </div>
+         </div>
+         <div class="address">
+           <a href="https://maps.google.com" target="_blank">123 Main Street, City, State</a>
+         </div>
+         <div class="contact-us"><strong>Contact Us: +1 123-456-7890</strong></div>
+         <nav>
+           <ul>
+             <li><a href="about.html">About Us</a></li>
+             <li><a href="book.html">Book</a></li>
+             <li><a href="service.html">Services</a></li>
+             <li><a href="contact.html">Contact Us</a></li>
+           </ul>
+         </nav>
+       </div>
+     </div>
+ </header>
+
+ <section class="confirmation">
+  <div class="container">
+    <h2>Booking Confirmation</h2>
+
+    <div class="booking-details">
+      <h3>Thank you for booking with The Man Cave Barbershop!</h3>
+
+      <p><strong>Name:</strong> <span id="name"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Date:</strong> <span id="date"></span></p>
+      <p><strong>Time:</strong> <span id="time"></span></p>
+      <p><strong>Service:</strong> <span id="service"></span></p>
+      <p><strong>Stylist:</strong> <span id="stylist"></span></p>
+    </div>
+
+    <img src="img/barber.jpg" alt="Happy Customer" class="footer-image">
+  </div>
+</section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <span class="contact-info">Contact Us: +1 123-456-7890</span>
+      </div>
+      <div class="footer-section">
+        <span class="address">Location: 123 Main Street, City, State</span>
+      </div>
+      <div class="footer-section">
+        <span class="trademarks">&copy; 2023 The Man Cave Barbershop. All rights reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Retrieves booking information
+    var params = new URLSearchParams(window.location.search);
+    var name = params.get('name');
+    var email = params.get('email');
+    var time = params.get('time');
+    var service = params.get('service');
+    var stylist = params.get('stylist');
+    var date = params.get('date');
+
+    // Sets the booking info in the new page
+    document.getElementById('name').textContent = name;
+    document.getElementById('email').textContent = email;
+    document.getElementById('date').textContent = date;
+    document.getElementById('time').textContent = time;
+    document.getElementById('service').textContent = service;
+    document.getElementById('stylist').textContent = stylist;
+  </script>
+</body>
+</html>
